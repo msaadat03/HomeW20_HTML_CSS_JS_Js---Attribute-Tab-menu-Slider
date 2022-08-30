@@ -1,0 +1,69 @@
+#news {
+    position: relative;
+    padding: 35px;
+
+    .toleft{
+        position: relative;
+        font-size: 25px;
+        top: -52px;
+        left: 100px;
+        cursor: pointer;
+
+    }
+
+    .toright{
+        position: relative;
+        font-size: 25px;
+        top: -52px;
+        left: 120px;
+        cursor: pointer;
+
+    }
+
+   .info-category {
+        font-size: 30px;
+    }
+
+    .info-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+
+        .info-card h3{
+            cursor: pointer;
+        }        
+
+        .cards {
+            flex: 0 0 auto;
+            width: 258px;
+            height: 370px;
+            margin-right: 40px;
+
+            .info-image {
+                position: relative;
+                width: 100%;
+                height: 225px;
+                overflow: hidden;
+                border-radius: 10px;
+                cursor: pointer;
+
+                .info-thumb {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .info-short-description {
+                width: 100%;
+                height: 20px;
+                overflow: hidden;
+                color: grey;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .info-container::-webkit-scrollbar {
+        display: none;
+    }
+
+}
